@@ -1,0 +1,22 @@
+
+
+
+type Cars {
+  id : ID!
+  name:String!
+}
+
+
+type Query {
+  cars : [Cars]!
+}
+
+
+type Mutation {
+    createCar(name:String!): Cars
+}
+
+
+type Subscription {
+  cars : [Cars]
+}

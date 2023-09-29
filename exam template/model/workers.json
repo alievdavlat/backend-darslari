@@ -1,0 +1,20 @@
+[
+        {
+                "id": 1,
+                "name": "tohsmat",
+                "position": "sotuvchi",
+                "workers_type": "kazrinka yangiyol"
+        },
+        {
+                "id": 2,
+                "name": "eshmat",
+                "position": "qorovul",
+                "workers_type": "kazrinka yangiyol"
+        },
+        {
+                "id": 3,
+                "name": "gishmat",
+                "position": "kassir",
+                "workers_type": "kazrinka yangiyol"
+        }
+]

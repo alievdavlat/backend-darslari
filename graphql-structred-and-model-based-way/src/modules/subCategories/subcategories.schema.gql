@@ -1,0 +1,25 @@
+
+
+type Subcategories {
+  id: ID! 
+  title: String!
+  category_id: String!
+  created_at: Date!
+}
+
+
+
+type Query {
+  subcategories(id:ID): [Subcategories]
+  subcategoriesById(id:ID!):Subcategories
+}
+
+type Mutation {
+  newSubCategory(title: String!, category_id:String!): Subcategories!
+  updateSubCategory(id:ID!, title: String!): Subcategories!
+  deletSubCategory(id:ID!): Subcategories!
+}
+
+scalar Date
+
+scalar Date 

@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <form  style="margin-top: 100px;"  action="/multer" enctype="multipart/form-data" method="POST">
+    <input type="text" placeholder="name" name="name">
+    <input type="text" placeholder="password" name="password">
+    <input type="file" name="image">
+    <button>send</button>
+  </form>
+
+
+
+  <ul style="list-style: none; margin-top: 50px; display: flex; gap: 20px; flex-wrap: wrap;  justify-content: center;">
+    <% users.map( item => {%>
+      <li style="border: 1px solid black; padding: 10px; width: fit-content;">
+        <h1> <%= item.name %> </h1>
+        <img src="<%= item.image %>" width="200px" style="border-radius: 50%;" alt="img">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, dicta!</p>
+        
+      </li>
+    <% })   %>
+    
+  </ul>
+
+  <script>
+   const deleteUsers = ( id ) => {
+    console.log(id);
+   }
+  </script>
+</body>
+</html>

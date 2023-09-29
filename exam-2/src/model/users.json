@@ -1,0 +1,16 @@
+[
+        {
+                "id": 1,
+                "username": "davlat",
+                "password": "$2b$10$6HP.ImxdGX2y8stBCpOPlOPy3faXPl5LdVT4WD.FC9NYoAehx.7X.",
+                "role": "admin",
+                "account": 70000
+        },
+        {
+                "id": 2,
+                "username": "munisa",
+                "password": "$2b$10$xAAhctBBeqnZ5vB4qx7wxu4d.V9ZoIn0g/fZDJZ7p4ycK54GXILkG",
+                "role": "user",
+                "account": null
+        }
+]

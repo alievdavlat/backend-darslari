@@ -1,0 +1,23 @@
+[
+        {
+                "id": 1,
+                "name": "coca cola",
+                "price": "13 000",
+                "count": "1000",
+                "products_type": "kazrinka yangiyol"
+        },
+        {
+                "id": 2,
+                "name": "non",
+                "price": "13 00",
+                "count": "300",
+                "products_type": "kazrinka yangiyol"
+        },
+        {
+                "id": 3,
+                "name": "kireshki",
+                "price": "7 000",
+                "count": "200",
+                "products_type": "kazrinka yangiyol"
+        }
+]

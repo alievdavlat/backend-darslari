@@ -1,0 +1,32 @@
+
+  {
+    "sayHello" :"Hi There ",
+    "name":"I'm Aliev Davlat",
+    "info":"nima gap ee bu mani partfoliom man fullstack developerman bilvolila nx 😂",
+    "projects": [
+      {
+        "name":"Todo",
+        "image":"images/thumbs/01.jpg"
+      },
+      {
+        "name":"Youtube",
+        "image":"images/thumbs/02.jpg"
+      },
+      {
+        "name":"Messenger",
+        "image":"images/thumbs/03.jpg"
+      },
+      {
+        "name":"Movie app",
+        "image":"images/thumbs/04.jpg"
+      },
+      {
+        "name":"Pakemon",
+        "image":"images/thumbs/05.jpg"
+      },
+       {
+        "name":"Ecommerse",
+        "image":"images/thumbs/06.jpg"
+      }
+    ]
+  }

@@ -1,0 +1,20 @@
+[
+        {
+                "id": 1,
+                "name": "Makro",
+                "branches": [],
+                "market_type": "makro"
+        },
+        {
+                "id": 2,
+                "name": "Havas",
+                "branches": [],
+                "market_type": "havas"
+        },
+        {
+                "id": 3,
+                "name": "Karzinka",
+                "branches": [],
+                "market_type": "karzinka"
+        }
+]

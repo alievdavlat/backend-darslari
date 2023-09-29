@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "ES6",                        // Qaysi ECMAScript versiyasiga kodi kompilyatsiya qilish
+    "module": "CommonJS",                   // Modul formati (masalan, CommonJS, ESNext)
+    "outDir": "./dist",                     // Kompilyatsiya natijalari uchun chiqariladigan direktoriya
+    "strict": true,                         // Strict mode
+    "esModuleInterop": true,                // ES module va CommonJS interopni yoqish
+    "forceConsistentCasingInFileNames": true,// Fayl nomlari to'g'ri nomlash (Windows uchun)
+    "rootDir": "./src",                     // TypeScript fayllarining joylashgan direktoriya
+    "strictNullChecks": true,               // Null va undefined-ni aniqlash
+    "baseUrl": "./",                        // Modul sarlavhasi uchun bazani sozlash
+    "paths": {
+      "*": ["./node_modules/*"]
+    }
+  },
+  "include": [
+    "./src/**/*.ts"                        // TypeScript fayllarini qaysi direktoriyalarda qidirish
+  ],
+  "exclude": [
+    "./node_modules"                        // TypeScript fayllarni qaysi direktoriyalardan ajratish
+  ]
+}

@@ -1,0 +1,21 @@
+
+
+
+type Users {
+  id : ID!
+  username:String!
+  password: String!
+}
+
+
+
+type Query {
+  users : [Users]!
+}
+
+
+type Mutation {
+  login(username:String! password: String!): loggedin
+}
+
+scalar loggedin

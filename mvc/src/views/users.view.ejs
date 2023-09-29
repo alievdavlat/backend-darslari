@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <%-include('./components/navbar.view.ejs') -%>
+  </header>
+
+  <h1>
+    hello world
+  </h1>
+  <div>
+    <h2 style="color: red; font-size: 70px;">
+      aliev davlat
+    </h2>
+
+    <p>
+      this is html template rendering with ejs mean server side rendering 
+    </p>
+
+   
+      <% for(let i of data) { %>
+        <h4>   <%= i.username %> -  <%= i.password %>     </h4>
+      <% } %>
+
+ 
+    
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "name": "aliev",
+        "password": "aliev2002",
+        "image": "http://localhost:8000/assets/uploades/ef32c167-e69e-4260-b3b9-e811904ac441aliev kastmda 2.jpg"
+    },
+    {
+        "id": 2,
+        "name": "durdona",
+        "password": "aliev2002",
+        "image": "http://localhost:8000/assets/uploades/ddb65d5f-84c3-491e-be55-aa4795026779durdona.jpg"
+    },
+    {
+        "id": 3,
+        "name": "dil",
+        "password": "aliev2002",
+        "image": "http://localhost:8000/assets/uploades/18e59a9a-c795-43da-9995-91c1c13e6f23durdona.jpg"
+    },
+    {
+        "id": 4,
+        "name": "dilwoda",
+        "password": "dili",
+        "image": "http://localhost:8000/assets/uploades/9cc8b2a5-f754-4d89-8c31-adf9779f143ddilwoda qow.jpg"
+    }
+]

@@ -1,0 +1,54 @@
+cls = clear qladi 
+use databaseName = agar bor databaseName yozlgan bosa owanga connect qladi mavjud bomagan databaseName yozlgan bosa create
+db.dropDatabase() = database ocradi 
+db.createCollection("collection name") = collection create qladi 
+db.getCollection("collection name") = collection oberadi 
+db.collectionName.insertOne || insertMany({})
+show dbs data baselani korsatadi 
+exit  = connect bob turgan databasedan uzladi 
+db.students.inserOne({
+  name : "spangeBob",
+  age : 30,
+  type : "gubka"
+}) = databasedagi sxemaga item qowadi
+
+
+db.users.find() = collectioni chqarb beradi hamma property valuelari bilan 
+
+db.users.find().sort({name:-1 or 1}) = sort method ichida 1 berlshi alfabit ga qarab sortlidi -1 esa alfabitga arab teskarsga
+
+db.users.find().limit(3)
+
+db.users.find({}, {name:1}) = bu postgresdaqa kereli columni oberadgan queryni
+
+
+db.users.updateOne({filter elem},{$set:{ new data}}) = update qladgan method 1 chi paramterga update boladgan
+elemni id , name yo nimadrni berladi , 2 chi paramterrga yangi malumot berladi 
+
+
+db.users.updateOne({filter elem},{$unset:{name:""}})  = unsetga berlgan property ni ochradi 
+
+
+db.users.updateMany({}, {$set:{ new data}}) = hamma itemlaga ozgartrish kirtadi
+
+db.users.updateMany({name:{$exist: false}})
+
+db.users.deleteOne({paramter})
+
+db.users.deleteMany({paramter})
+
+db.users.find({name:{$in:["eshmat", "suslik"]}}) = in operatori biron narsa ichidagi narsalain olshga kere
+db.users.find({name:{$nin:["eshmat", "suslik"]}}) = nin operatori biron narsa ichida bomaganlani  olshga kere
+
+logical operatorla 
+
+$and 
+$or
+$not
+$nor
+$lte = less Then dan  manosi js degi > operatori
+db.users.find({$and:[{name:1}, {age:{$lte:20}}]})
+
+db.users.find({name:"aziz"}).explain("executionStats")
+
+show collections

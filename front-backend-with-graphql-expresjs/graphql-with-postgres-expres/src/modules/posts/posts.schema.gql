@@ -1,0 +1,17 @@
+
+
+
+type Posts {
+  id: ID!
+  title: String!
+}
+
+
+type Query {
+  posts:[Posts]!
+}
+
+
+type Mutation {
+  newPost(title : String!): Posts
+}

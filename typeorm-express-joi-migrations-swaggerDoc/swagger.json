@@ -1,0 +1,112 @@
+{
+  "swagger":"2.0",
+  "info":{
+     "description":"API Documentation",
+     "title":"Typescipt-typeorm-express-crud ",
+     "version":"v3.0"
+  },
+  "tags":[
+     {
+        "name":"v3"
+     }
+  ],
+  "consumes":[
+     "application/json"
+  ],
+  "produces":[
+     "application/json"
+  ],
+  "paths":{
+     "/players":{
+        "get":{
+           "tags":[
+              "v3"
+           ],
+           "description":"Players api get",
+           "consumes":[
+              "application/json"
+           ],
+           "produces":[
+              "application/json"
+           ],
+           "parameters":[
+              {
+                 "name":"Accept",
+                 "in":"header",
+                 "description":"The Accept request-header field can be used to specify the media types which are acceptable for the response. If not provided, the default value will be application/json",
+                 "required":false,
+                 "default":"application/json",
+                 "type":"string"
+              },
+              {
+                 "name":"Content-Type",
+                 "in":"header",
+                 "description":"The MIME type of the body of the request.  Required for PUT, POST, and PATCH, where a request body is expected to be provided.",
+                 "required":true,
+                 "default":"application/json; charset=utf-8",
+                 "type":"string"
+              },
+              {
+                 "name":"id",
+                 "in":"header",
+                 "description":"id uuid typeda keladi",
+                 "required":true,
+                 "default":"en_US",
+                 "type":"string"
+              },
+              {
+                 "name":"name",
+                 "in":"header",
+                 "description":"name type string lengt 64 harfdan oshmasligi kere",
+                 "required":true,
+                 "default":"davlatbek",
+                 "type":"string"
+              },
+             
+              {
+                 "name":"club",
+                 "in":"body",
+                 "description":"club array typeda keladi",
+                 "required":true,
+                 "schema":{
+                    "$ref":"#/definitions/exampleDefinition"
+                 }
+              }
+           ],
+           "responses":{
+              "200":{
+                 "description":"OK",
+                 "headers":{
+                    "transaction_id":{
+                       "type":"string",
+                       "default":"de305d54-75b4-431b-adb2-eb6b9e546013",
+                       "description":"The identifier for the service transaction attempt."
+                    }
+                 }
+              }
+           }
+        }
+     }
+  },
+  "definitions":{
+     "exampleDefinition":{
+        "type":"object",
+        "description":"Request details for Example Definition",
+        "properties":{
+           "id":{
+              "type":"string",
+              "description":"Specifies type uuid"
+           },
+           "name":{
+              "type":"string",
+              "description":"club name lenght 64 harfdan ibborat bolishi kerak"
+           }
+          
+        },
+        "required":[
+           "id",
+           "name"
+        ]
+     }
+  }
+}

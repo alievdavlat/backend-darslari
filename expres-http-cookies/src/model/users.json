@@ -1,0 +1,20 @@
+[
+  {
+    "id":1,
+    "name":"aliev",
+    "password":"aliev2002",
+    "role":"admin"
+  },
+  {
+    "id":2,
+    "name":"eshmat",
+    "password":"toshmatov123",
+    "role":"user"
+  },
+  {
+    "id":3,
+    "name":"durdona",
+    "password":"alieva2004",
+    "role":"user"
+  }
+ ]
